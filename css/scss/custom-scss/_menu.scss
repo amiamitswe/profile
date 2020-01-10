@@ -1,0 +1,92 @@
+.menu {
+  max-width: 25%;
+  overflow: scroll;
+  float: left;
+  background-color: #aba39b;
+  height: 100vh;
+  // height: auto;
+  position: fixed;
+
+  &__top {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    position: relative;
+  }
+
+  &__user--img {
+    width: 60%;
+    border-radius: 50%;
+    margin: 0 auto;
+    transform: scale(0.9);
+    transition: all 0.2s;
+
+    &:hover {
+      filter: blur(2px) brightness(80%);
+      transform: scale(0.98);
+    }
+  }
+
+  &__user--name {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-primary;
+    background-color: $color-white;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 35px;
+    padding: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  &__bottom {
+    display: block;
+  }
+
+  &__link--list {
+    list-style: none;
+    border-top: 1px solid #dfd9d4;
+  }
+
+  &__link--item {
+    padding: 1rem;
+    border-bottom: 1px solid #dfd9d4;
+    background-image: linear-gradient(
+      125deg,
+      transparent 0%,
+      transparent 50%,
+      $color-primary-dark 50%
+    );
+    background-size: 250%;
+    transition: all 0.5s;
+
+    &:hover,
+    &:active {
+      background-position: 100%;
+    }
+  }
+
+  .active {
+    background-position: 100%;
+  }
+
+  &__link--icon {
+    padding-right: 1rem;
+  }
+
+  &__link--itme-text {
+    color: $color-white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    transition: all 0.5s;
+
+    &:hover {
+      transform: translateX(1rem);
+    }
+  }
+}

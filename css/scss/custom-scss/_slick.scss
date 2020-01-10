@@ -1,0 +1,18 @@
+// .slick-track {
+//     width: 100% !important;
+// }
+
+// .slick-slide {
+//     width: 50% !important;
+//     margin: 0 auto;
+// }
+
+.slick-slide {
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
