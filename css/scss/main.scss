@@ -1,14 +1,34 @@
-@import './custom-scss/variable';
-@import './custom-scss/mixins';
-@import './custom-scss/grid';
-@import './custom-scss/typography';
+// base css
+@import './custom-scss/base/animation';
+@import './custom-scss/base/variable';
+@import './custom-scss/base/mixins';
+@import './custom-scss/base/functions';
+@import './custom-scss/base/base';
+@import './custom-scss/base/grid';
+
 
 // slick css
 @import './slick-css/slick';
 @import './slick-css/slick-theme';
 
-@import './custom-scss/base';
-@import './custom-scss/slick';
+// ---- custom slick css
+@import './custom-scss/components/slick';
 
-@import './custom-scss/menu';
-@import './custom-scss/home';
+// typography css
+@import './custom-scss/components/typography/typography';
+// menu css
+@import './custom-scss/components/menu/menu';
+@import './custom-scss/components/menu/menu-mobile';
+
+
+// container-box css
+@import './custom-scss/components/container-box';
+
+// Home component css
+@import './custom-scss/components/home/home';
+@import './custom-scss/components/home/home-text-box';
+@import './custom-scss/components/home/home-social-link';
+
+// Project compnent css
+@import './custom-scss/components/projects/project_container';
+@import './custom-scss/components/projects/project_content';

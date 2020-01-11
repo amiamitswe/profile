@@ -1,0 +1,28 @@
+.home {
+  padding-top: 5rem;
+  min-height: 100vh;
+
+  &__img {
+    width: 20%;
+    border-radius: 50%;
+    box-shadow: box-shadow(0.5);
+    border: 1px solid $color-white;
+  }
+  
+
+  @include respond(tab_port) {
+    & {
+      height: auto;
+      padding-bottom: 5rem;
+    }
+    &__img {
+      width: 30%;
+    }
+  }
+
+  @include respond(phone) {
+    &__img {
+      width: 50%;
+    }
+  }
+}

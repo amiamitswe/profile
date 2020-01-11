@@ -1,0 +1,81 @@
+.menu {
+  @include respond(tab_port) {
+    max-width: 100%;
+
+    transform: translateX(-100%);
+    transition: all 0.2s;
+
+    &__btn--checkbox:checked~& {
+      transform: translateX(0);
+    }
+
+    &__btn--button {
+      display: block;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 2rem;
+    }
+
+    &__btn--icon {
+      position: relative;
+
+      &,
+      &::before,
+      &::after {
+        width: 3rem;
+        height: 4px;
+        background-color: $color-gray-dark-3;
+        display: inline-block;
+        border-radius: 50%;
+        backface-visibility: hidden;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all .2s;
+      }
+
+      & {
+        top: 3.5rem;
+      }
+
+      &::before {
+        top: -.8rem;
+      }
+
+      &::after {
+        top: .8rem;
+      }
+    }
+
+    &__btn--button:hover {
+      cursor: pointer;
+    }
+
+    &__btn--button:hover &__btn--icon::before {
+      transform: translateY(-.2rem);
+    }
+
+    &__btn--button:hover &__btn--icon::after {
+      transform: translateY(.2rem);
+    }
+
+    &__btn--checkbox:checked+&__btn--button &__btn--icon {
+      background-color: transparent;
+    }
+
+    &__btn--checkbox:checked+&__btn--button &__btn--icon::before {
+      transform: rotate(135deg);
+      top: 0;
+    }
+
+    &__btn--checkbox:checked+&__btn--button &__btn--icon::after {
+      transform: rotate(-135deg);
+      top: 0;
+    }
+  }
+}

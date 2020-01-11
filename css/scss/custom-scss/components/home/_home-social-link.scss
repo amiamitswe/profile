@@ -1,0 +1,63 @@
+.social {
+  padding: 4rem 0;
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+    padding: 0 1rem;
+  }
+
+  &__text {
+    text-decoration: none;
+  }
+
+  &__icon {
+    font-size: 4rem;
+    transition: all 0.2s;
+  }
+
+  &__fb {
+    color: $facebook;
+  }
+
+  &__tt {
+    color: $twitter;
+  }
+
+  &__li {
+    color: $linkdin;
+  }
+
+  &__sk {
+    color: $skype;
+  }
+
+  &__gh {
+    color: $github;
+  }
+
+  &__span {
+    display: block;
+    opacity: 0;
+    text-transform: uppercase;
+    transform: translateY(-3rem);
+    transition: all 0.2s;
+    font-size: 1.6rem;
+    font-weight: 100;
+    color: $color-secondary-dark;
+  }
+
+  &__text:hover &__icon {
+    // animation: rotateIcon 0.9s;
+    animation-iteration-count: 1;
+    transform: scale(1.5);
+  }
+
+  &__text:hover &__span {
+    transform: translateY(1rem);
+    opacity: 1;
+  }
+}

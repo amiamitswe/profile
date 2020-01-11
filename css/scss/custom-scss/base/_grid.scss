@@ -29,6 +29,20 @@
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
     }
+
+    @include respond (tab_port) {
+      width: 45% !important;
+      margin-bottom: 2rem;
+      
+      &:not(:last-child) {
+        margin-right: $gutter-horizontal / 2 !important;
+      }
+    }
+
+    @include respond (phone) {
+      width: 100% !important;
+      margin-right: 0 !important;
+    }
   }
 
   .col-1 {

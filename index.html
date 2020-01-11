@@ -22,6 +22,12 @@
 <body>
   <main>
     <div class="container">
+
+      <input type="checkbox" class="menu__btn--checkbox" id="navi-toggle">
+      <label for="navi-toggle" class="menu__btn--button">
+        <span class="menu__btn--icon">&nbsp;</span>
+      </label>
+
       <div class="menu">
         <div class="menu__top">
           <figure class="menu__user">
@@ -42,10 +48,10 @@
           <div class="menu__link">
             <ul class="menu__link--list">
               <li class="menu__link--item active">
-                <a href="#" class="menu__link--itme-text"><i class="fal fa-home menu__link--icon"></i>Home</a>
+                <a href="#home" class="menu__link--itme-text"><i class="fal fa-home menu__link--icon"></i>Home</a>
               </li>
               <li class="menu__link--item">
-                <a href="#" class="menu__link--itme-text"><i class="fal fa-project-diagram menu__link--icon"></i>Projects</a>
+                <a href="#project" class="menu__link--itme-text"><i class="fal fa-project-diagram menu__link--icon"></i>Projects</a>
               </li>
               <li class="menu__link--item">
                 <a href="#" class="menu__link--itme-text"><i class="fal fa-link menu__link--icon"></i>social links</a>
@@ -69,9 +75,89 @@
       </div>
 
       <div class="container-box">
-  <h1>fddsgdsgds</h1>
+          <section class="home" id="home">
+            <figure class="home__img-wrap">
+              <img class="home__img" src="./img/profile-1.jpg" alt="Image">
+            </figure>
+
+            <div class="home__text">
+              <h1 class="home__text--title">Amit Samadder (Abir)</h1>
+              <span class="home__text--subtitle">Front-end Engineer</span>
+            </div>
+
+            <figure class="social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a href="#" class="social__text"><i class="social__icon social__fb fab fa-facebook-square"></i><span class="social__span">Facebook</span></a></li>
+                <li class="social__item">
+                  <a href="#" class="social__text"><i class="social__icon social__tt fab fa-twitter-square"></i><span class="social__span">twitter</span></a></li>
+                <li class="social__item">
+                  <a href="#" class="social__text"><i class="social__icon social__gh fab fa-github-square"></i><span class="social__span">github</span></a></li>
+                <li class="social__item">
+                  <a href="#" class="social__text"><i class="social__icon social__li fab fa-linkedin"></i><span class="social__span">linkedin</span></a></li>
+                <li class="social__item">
+                  <a href="#" class="social__text"><i class="social__icon social__sk fab fa-skype"></i><span class="social__span">skype</span></a></li>
+              </ul>
+            </figure>
+          </section>
+
+          <!-- section project  -->
+          <section class="project" id="project">
+            <h2 class="banner__title">Here is my projects</h2>
+
+            <div class="project__container">
+              <div class="row">
+                <div class="col-1-of-3">
+                  <div class="project__content">
+                    <div class="project__img">
+                      <img class="project__img--demo" src="./img/profile-1.jpg" alt="Amit">
+                    </div>
+                    <div class="project__details">
+                      <p class="project__details--text">HTML, CSS, SCSS, JS, BOOTSTRAP HTML, CSS, SCSS, JS, BOOTSTRAPHTML, CSS, SCSS, JS, BOOTSTRAP</p>
+                    </div>
+                    <div class="project__buttons">
+                      <a href="#" class="project__btn"><i class="fal fa-eye"></i> DEMO</a>
+                      <a href="#" class="project__btn"><i class="fal fa-code"></i> code</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1-of-3">
+                  <div class="project__content">
+                    <div class="project__img">
+                      <img class="project__img--demo" src="./img/profile-2.jpg" alt="Amit">
+                    </div>
+                    <div class="project__details">
+                      <p class="project__details--text">HTML, CSS, SCSS, JS, BOOTSTRAP HTML, CSS, SCSS, JS, BOOTSTRAPHTML, CSS, SCSS, JS, BOOTSTRAP</p>
+                    </div>
+                    <div class="project__buttons">
+                      <a href="#" class="project__btn"><i class="fal fa-eye"></i> DEMO</a>
+                      <a href="#" class="project__btn"><i class="fal fa-code"></i> code</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1-of-3">
+                  <div class="project__content">
+                    <div class="project__img">
+                      <img class="project__img--demo" src="./img/profile-3.jpg" alt="Amit">
+                    </div>
+                    <div class="project__details">
+                      <p class="project__details--text">HTML, CSS, SCSS, JS, BOOTSTRAP HTML, CSS, SCSS, JS, BOOTSTRAPHTML, CSS, SCSS, JS, BOOTSTRAP</p>
+                    </div>
+                    <div class="project__buttons">
+                      <a href="#" class="project__btn"><i class="fal fa-eye"></i> DEMO</a>
+                      <a href="#" class="project__btn"><i class="fal fa-code"></i> code</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
       </div>
     </div>
+
+
+
+
   </main>
 
   <script src="./js/jquery-1.11.0.min.js"></script>

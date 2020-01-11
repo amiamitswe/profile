@@ -1,0 +1,53 @@
+.project {
+  &__content {
+    background-color: $color-gray-dark;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: box-shadow(0.5);
+  }
+
+  &__img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__img--demo {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  &__details {
+    background-color: $color-primary-light;
+    margin: 1rem auto;
+  }
+
+  &__details--text {
+    color: $color-gray-light-2;
+  }
+
+  &__buttons {
+    display: block;
+    padding: 1rem 0;
+  }
+
+  &__btn {
+    &,
+    &:active,
+    &:visited {
+      text-decoration: none;
+      color: $color-primary-dark;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.1rem;
+      padding: 1rem;
+      background-color: $color-gray-light-2;
+      display: inline-block;
+      width: 49%;
+    }
+
+    i {
+        vertical-align: middle;
+    }
+  }
+}

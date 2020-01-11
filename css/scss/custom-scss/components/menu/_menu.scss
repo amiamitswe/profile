@@ -6,6 +6,15 @@
   height: 100vh;
   // height: auto;
   position: fixed;
+  z-index: 100;
+
+  &__btn--button {
+    display: none;
+  }
+
+  &__btn--checkbox {
+    display: none;
+  }
 
   &__top {
     text-align: center;

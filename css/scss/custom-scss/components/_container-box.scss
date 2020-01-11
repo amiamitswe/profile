@@ -3,7 +3,11 @@
     float: right;
     width: 75%;
     background-color: #0080002b;
-    height: 200vh;
     text-align: center;
+    
+    
+    @include respond(tab_port) {
+      width: 100%;
+    }
   }
   
