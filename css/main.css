@@ -754,6 +754,12 @@ body {
   padding: 0 1rem;
 }
 
+@media (max-width: 56.25em) {
+  .social__item {
+    padding: 0;
+  }
+}
+
 .social__text {
   text-decoration: none;
 }
