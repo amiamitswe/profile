@@ -30,17 +30,11 @@
 
       <div class="menu">
         <div class="menu__top">
-          <figure class="menu__user">
-            <div>
-              <img src="./img/profile-1.jpg" alt="Amit" class="menu__user--img" />
+            <div class="menu__user">
+                <img class="menu__user--img" src="./img/profile-1.jpg" alt="Image">
             </div>
-            <div>
-              <img src="./img/profile-2.jpg" alt="Amit" class="menu__user--img" />
-            </div>
-            <div>
-              <img src="./img/profile-3.jpg" alt="Amit" class="menu__user--img" />
-            </div>
-          </figure>
+          <!-- <img class="menu__user" src="./img/profile-1.jpg" alt="Image"> -->
+          
           <figcaption class="menu__user--name">Amit Samadder</figcaption>
         </div>
 
@@ -53,18 +47,17 @@
               <li class="menu__link--item">
                 <a href="#project" class="menu__link--itme-text"><i class="fal fa-project-diagram menu__link--icon"></i>Projects</a>
               </li>
-              <li class="menu__link--item">
+              <!-- <li class="menu__link--item">
                 <a href="#" class="menu__link--itme-text"><i class="fal fa-link menu__link--icon"></i>social links</a>
-              </li>
+              </li> -->
               <li class="menu__link--item">
-                <a href="#" class="menu__link--itme-text"><i class="fal fa-university menu__link--icon"></i>education</a>
+                <a href="#education" class="menu__link--itme-text"><i class="fal fa-university menu__link--icon"></i>education</a>
               </li>
               <li class="menu__link--item">
                 <a href="#" class="menu__link--itme-text"><i class="fal fa-map-marked-alt menu__link--icon"></i>Address</a>
               </li>
               <li class="menu__link--item">
-                <a href="#" class="menu__link--itme-text"><i class="fal fa-images menu__link--icon"></i>photo
-                  gallery</a>
+                <a href="#" class="menu__link--itme-text"><i class="fal fa-images menu__link--icon"></i>photo gallery</a>
               </li>
               <li class="menu__link--item">
                 <a href="#" class="menu__link--itme-text"><i class="fal fa-phone-alt menu__link--icon"></i>contact</a>
@@ -77,7 +70,16 @@
       <div class="container-box">
           <section class="home" id="home">
             <figure class="home__img-wrap">
-              <img class="home__img" src="./img/profile-1.jpg" alt="Image">
+                <div>
+                  <img src="./img/profile-1.jpg" alt="Amit" class="home__img-wrap-item" />
+                </div>
+                <div>
+                  <img src="./img/profile-2.jpg" alt="Amit" class="home__img-wrap-item" />
+                </div>
+                <div>
+                  <img src="./img/profile-3.jpg" alt="Amit" class="home__img-wrap-item" />
+                </div>
+
             </figure>
 
             <div class="home__text">
@@ -107,51 +109,145 @@
 
             <div class="project__container">
               <div class="row">
+
                 <div class="col-1-of-3">
                   <div class="project__content">
                     <div class="project__img">
-                      <img class="project__img--demo" src="./img/profile-1.jpg" alt="Amit">
+                      <img class="project__img--demo" src="./img/profile.PNG" alt="profile">
                     </div>
                     <div class="project__details">
-                      <p class="project__details--text">HTML, CSS, SCSS, JS, BOOTSTRAP HTML, CSS, SCSS, JS, BOOTSTRAPHTML, CSS, SCSS, JS, BOOTSTRAP</p>
+                      <p class="project__details--text">HTML-5, CSS-3, SCSS, JS, Slick-slider</p>
                     </div>
                     <div class="project__buttons">
-                      <a href="#" class="project__btn"><i class="fal fa-eye"></i> DEMO</a>
-                      <a href="#" class="project__btn"><i class="fal fa-code"></i> code</a>
+                      <a href="/index.html" class="project__btn"><i class="fal fa-eye"></i> DEMO</a>
+                      <a class="project__btn project__btn-diable"><i class="fal fa-code"></i> code</a>
                     </div>
                   </div>
                 </div>
+
                 <div class="col-1-of-3">
                   <div class="project__content">
                     <div class="project__img">
-                      <img class="project__img--demo" src="./img/profile-2.jpg" alt="Amit">
+                      <img class="project__img--demo" src="./img/indecision-app.PNG" alt="indecision-app">
                     </div>
                     <div class="project__details">
-                      <p class="project__details--text">HTML, CSS, SCSS, JS, BOOTSTRAP HTML, CSS, SCSS, JS, BOOTSTRAPHTML, CSS, SCSS, JS, BOOTSTRAP</p>
+                      <p class="project__details--text">React JS, HTML-5, CSS-3, SCSS, freecodecamp</p>
                     </div>
                     <div class="project__buttons">
-                      <a href="#" class="project__btn"><i class="fal fa-eye"></i> DEMO</a>
-                      <a href="#" class="project__btn"><i class="fal fa-code"></i> code</a>
+                      <a href="https://bit.ly/2kvUU2R" target="blank" class="project__btn"><i class="fal fa-eye"></i> DEMO</a>
+                      <a href="https://github.com/amiamitswe/random_quote_machine" target="blank" class="project__btn"><i class="fal fa-code"></i> code</a>
                     </div>
                   </div>
                 </div>
+
                 <div class="col-1-of-3">
                   <div class="project__content">
                     <div class="project__img">
-                      <img class="project__img--demo" src="./img/profile-3.jpg" alt="Amit">
+                      <img class="project__img--demo" src="./img/nature.PNG" alt="nature">
                     </div>
                     <div class="project__details">
-                      <p class="project__details--text">HTML, CSS, SCSS, JS, BOOTSTRAP HTML, CSS, SCSS, JS, BOOTSTRAPHTML, CSS, SCSS, JS, BOOTSTRAP</p>
+                      <p class="project__details--text">HTML-5, advance CSS-3, SCSS</p>
                     </div>
                     <div class="project__buttons">
-                      <a href="#" class="project__btn"><i class="fal fa-eye"></i> DEMO</a>
-                      <a href="#" class="project__btn"><i class="fal fa-code"></i> code</a>
+                      <a href="http://bit.ly/2FDrYwJ" target="blank" class="project__btn"><i class="fal fa-eye"></i> DEMO</a>
+                      <a href="https://github.com/amiamitswe/natours" target="blank" class="project__btn"><i class="fal fa-code"></i> code</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="col-1-of-3">
+                  <div class="project__content">
+                    <div class="project__img">
+                      <img class="project__img--demo" src="./img/my-blog.PNG" alt="my-blog">
+                    </div>
+                    <div class="project__details">
+                      <p class="project__details--text">HTML-5, CSS-3, SCSS, JS, Materialize.css</p>
+                    </div>
+                    <div class="project__buttons">
+                      <a href="https://bit.ly/2ZsPjJX" target="blank" class="project__btn"><i class="fal fa-eye"></i> DEMO</a>
+                      <a href="https://github.com/amiamitswe/my-blog" target="blank" class="project__btn"><i class="fal fa-code"></i> code</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-1-of-3">
+                  <div class="project__content">
+                    <div class="project__img">
+                      <img class="project__img--demo" src="./img/random_quote_machine.PNG" alt="random_quote_machine">
+                    </div>
+                    <div class="project__details">
+                      <p class="project__details--text">React JS, HTML-5, CSS-3, SCSS, </p>
+                    </div>
+                    <div class="project__buttons">
+                      <a href="https://bit.ly/2ZFElnE" target="blank" class="project__btn"><i class="fal fa-eye"></i> DEMO</a>
+                      <a href="https://github.com/amiamitswe/current-weather-using-js" target="blank" class="project__btn"><i class="fal fa-code"></i> code</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-1-of-3">
+                  <div class="project__content">
+                    <div class="project__img">
+                      <img class="project__img--demo" src="./img/weather.PNG" alt="weather">
+                    </div>
+                    <div class="project__details">
+                      <p class="project__details--text">HTML-5, CSS-3, JavaScript, API</p>
+                    </div>
+                    <div class="project__buttons">
+                      <a href="https://bit.ly/2ZFElnE" target="blank" class="project__btn"><i class="fal fa-eye"></i> DEMO</a>
+                      <a href="https://github.com/amiamitswe/current-weather-using-js" target="blank" class="project__btn"><i class="fal fa-code"></i> code</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
+
+
+          <!-- section education  -->
+          <section class="education" id="education">
+            <h2 class="banner__title">Education background</h2>
+
+            <div class="education__container">
+              <div class="row">
+
+                <div class="col-1-of-3">
+                  <div class="education__content">
+                    <i class="education__icon fal fa-university"></i>
+                    <h2>University</h2>
+                    <h3>Daffodil International University</h3>
+                    <h4>B.Sc in Software Engineering</h4>
+                    <p><span>Address:</span> Dhaka</p>
+                  </div>
+                </div>
+
+                <div class="col-1-of-3">
+                  <div class="education__content">
+                    <i class="education__icon fal fa-backpack"></i>
+                    <h2>College</h2>
+                    <h3>Shahid Smriti Degree College</h3>
+                    <h4>Group &mdash; Science</h4>
+                    <p><span>Address:</span> Barishal</p>
+                  </div>
+                </div>
+
+                <div class="col-1-of-3">
+                  <div class="education__content">
+                    <i class="education__icon fal fa-school"></i>
+                    <h2>School</h2>
+                    <h3>Harta School & College</h3>
+                    <h4>Group &mdash; Science</h4>
+                    <p><span>Address:</span> Barishal</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+          
       </div>
     </div>
 

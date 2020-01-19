@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  $(".menu__user").slick({
-    autoplay: true,
+  $(".home__img-wrap").slick({
+    autoplay: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,

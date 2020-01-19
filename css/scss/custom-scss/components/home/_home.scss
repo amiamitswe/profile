@@ -1,27 +1,30 @@
 .home {
-  padding-top: 5rem;
+  padding-top: 1rem;
   min-height: 100vh;
 
-  &__img {
-    width: 20%;
+  &__img-wrap-item {
+    width: 25%;
     border-radius: 50%;
-    box-shadow: box-shadow(0.5);
+    box-shadow: box-shadow(0.7);
     border: 1px solid $color-white;
+    margin: 4rem auto;
+    padding: .2rem;
   }
   
 
   @include respond(tab_port) {
     & {
       height: auto;
+      padding-top: 5rem;
       padding-bottom: 5rem;
     }
-    &__img {
+    &__img-wrap-item {
       width: 30%;
     }
   }
 
   @include respond(phone) {
-    &__img {
+    &__img-wrap-item {
       width: 50%;
     }
   }
